@@ -3,7 +3,7 @@ This library provides a typed, readable syntax for coloring strings that works i
 ```javascript
 import * as ansicolor from "./ansicolor.mjs"
 
-console.log(ansicolor.fore("String", "magenta"))
+console.log(ansicolor.fore("String", "yellow"))
 ```
 logs
 ```javascript
@@ -22,5 +22,5 @@ Download `ansicolor.mjs`.
 ## usage
 `ansicolor` exports `back` and `fore`, functions that accept an arbitrary string, a pure color, and if the color should be brighter, `true`, and return the colored string. Background and foreground colors can be combined.
 ```javascript
-console.log(ansicolor.back(` ${ansicolor.fore("highlighted ink", "blue", true)} `, "yellow"))
+console.log(ansicolor.back(` ${ansicolor.fore("fancy success", "magenta", true)} `, "green"))
 ```
